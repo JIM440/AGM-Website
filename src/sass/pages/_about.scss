@@ -1,0 +1,96 @@
+// about prophet kevin
+//
+//
+//
+.intro-about{
+    .container{
+display: flex;flex-direction:column;
+gap: 3rem;
+
+@include breakpointDynamic(730px){
+    &{
+        gap: 8.7rem;
+    }
+}
+
+    .about-cols.even-columns{
+    gap: 3rem !important;
+}
+.about-cols.even-columns.reverse{
+    margin-block: 1rem;
+    @include breakpointDynamic(730px){
+        &>div:first-of-type{
+            order: 2;
+        }
+    }
+}
+}
+}
+
+#mandates{
+    .container{
+        .header{
+            margin-bottom: 2.4rem;
+        }
+        .mandate-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+
+            .mandate-box{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 300px;
+                flex: 1 1 300px;
+                position: relative;
+
+                img{
+                    width: 100%;
+                    height: 300px;
+                    background-color: $text-muted;
+                    object-fit: cover;
+                }
+
+                .mandate-name{
+                    position: absolute;
+                    top: 258px;
+                    left: 10px;
+                    padding: 6px;
+                    color: $white;
+                }
+            }
+            .red{
+                background-color: red;
+            }
+           .blue{
+                background-color: royalblue;
+            }
+           .yellow{
+                background-color: rgba(255, 217, 0, 0.852);
+            }
+           .purple{
+                background-color: purple;
+            }
+           .green{
+                background-color: green;
+            }
+           }
+    }
+}
+
+
+
+
+// about agm
+//
+//
+//
+
+
+
+// about the priests
+//
+//
+//
+

@@ -1,0 +1,43 @@
+.hero-bg{
+    margin-top: 83px;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rebeccapurple;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: end;
+        min-height: 400px;
+
+
+        *{
+            color: $white;
+        }
+
+        @include breakpointDynamic(600px){
+            p{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            h1{
+                font-weight: 400;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    @include breakpointDynamic(560px){
+        &{
+            margin-top: 105px;
+            min-height: 500px;
+            background-position: unset;
+
+            .container{
+                min-height: 500px;
+            }
+        }
+    }
+}

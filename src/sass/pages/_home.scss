@@ -1,0 +1,132 @@
+#hero {
+  margin-top: 5rem;
+
+
+  .hero-home-image {
+    img {
+      width: 100%;
+      max-width: none;
+      height: auto;
+    }
+    img.desktop {
+      display: none;
+    }
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include breakpointDynamic(700px) {
+      img.mobile {
+        display: none;
+      }
+      img.desktop {
+        display: initial;
+      }
+    }
+  }
+}
+
+@include breakpointDynamic(700px){
+  #hero{
+    margin-top: 5.8rem;
+  }
+}
+
+
+#featured-content {
+  .container {
+    .link{
+      display: inline-block;
+      font-weight: 600;
+      margin-top: 1.2rem;
+      text-decoration: underline;
+      color: $primary-color;
+    }
+
+    & > h3 {
+      color: var(--Black, #000);
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration-line: underline;
+      margin-block: 1rem;
+    }
+  }
+}
+
+#testimonies {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .header {
+      align-self: flex-start;
+    }
+  }
+}
+
+// ========== =========    ========= =========
+// ========== =========    ========= =========
+// ==========   Other Home Paages   =========
+// ========== =========    ========= =========
+// ========== =========    ========= =========
+
+
+
+// testimonies page styles
+.testimonies.hero-bg{
+    background-image: url(https://www.nairaland.com/attachments/8329837_fbimg15449535261118082_jpeg70c8c4b83d081570da8db6664802c8b8);
+  }
+
+
+
+  // salvation page styles
+.salvation.hero-bg{
+    background-image: url(https://media.istockphoto.com/id/657091114/photo/crucifixion-of-jesus-christ.jpg?s=612x612&w=0&k=20&c=GrvlF-IaMzbTJoRxMfz-g8PVjlbdi7l56FmG6uOi0q0=);
+  }
+
+#salvation{
+.container-salvation{
+  h2{
+    margin-bottom: 20px;
+  }
+  .singlearticle.hero-bg{
+    background-image: url(https://godshotspot.files.wordpress.com/2014/06/e4284-jesus-walking-among-7-candlesticks11.jpg?w=522&h=393);
+  }
+}
+}
+
+
+
+// article page styles
+.article-content-container{
+
+.container{
+  display: flex;
+flex-direction: column;
+gap: 1.4rem;
+
+.category-header{
+  &>span{
+    color: $text-muted;
+
+    &>*{
+      font-size: 14px;
+    }
+
+    i{
+      margin-right: 10px;
+    }
+  }
+}
+}
+}
+
+.single-article.hero-bg{
+  background-image: url(https://www.sevenchurchesofapocalypse.com/assets/images/jesus-seven-lampstansd-600x449.jpg);
+}
+
+.articles.hero-bg{
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5a1d221bbce17620f86369aa/1601060610944-1PUIR1O4WTD5ZUXRTS2H/123_1+2.jpeg?format=1500w);
+}
