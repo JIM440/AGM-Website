@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <>
           <section id="">
-      <div class="container partner-container">
+      <div className="container partner-container">
         <h2>Satellite</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
@@ -25,8 +25,8 @@ const Project = () => {
           If 100 people give 10k, problem solved
         </p>
         <br />
-        <p class="progress-bar"><span></span></p>
-        <div class="stats">
+        <p className="progress-bar"><span></span></p>
+        <div className="stats">
           <p>600,000 cfa/ 1,000,000 cfa</p>
           <p>60% gone</p>
         </div>

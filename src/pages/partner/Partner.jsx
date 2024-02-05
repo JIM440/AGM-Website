@@ -4,7 +4,7 @@ const Partners = () => {
   return (
     <>
           <section id="">
-      <div class="container partner-container">
+      <div className="container partner-container">
         <h2>Why Become a partner?</h2>
         <p>Become a partner with as little as $6.</p>
         <p>
@@ -24,8 +24,8 @@ const Partners = () => {
           consequuntur harum pariatur asperiores a vel accusantium nihil! Nihil
           eveniet, repudiandae mollitia odit dolorem ut?
         </p>
-        <div class="even-columns">
-          <div class="text">
+        <div className="even-columns">
+          <div className="text">
             <h2>Partner Perks</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde
@@ -41,8 +41,8 @@ const Partners = () => {
           </div>
           <img src="" alt="" />
         </div>
-        <div class="even-columns">
-          <div class="text">
+        <div className="even-columns">
+          <div className="text">
             <h2>Where Does your Partnership go to?</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi

@@ -737,6 +737,9 @@ nav.clicked {
   padding: 24px;
   padding-inline: 10px;
 }
+.mobile-nav ul a.active i {
+  rotate: 180deg;
+}
 .mobile-nav ul .drop-down {
   margin-left: 20px;
   display: none;
@@ -780,9 +783,6 @@ nav.clicked {
 }
 .mobile-nav ul li:last-of-type .btn:hover {
   color: white;
-}
-.mobile-nav ul a.active i {
-  rotate: 180deg;
 }
 .mobile-nav .icons-container {
   margin-top: 2rem;

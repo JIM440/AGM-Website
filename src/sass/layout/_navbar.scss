@@ -134,6 +134,7 @@ nav.clicked{
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       li {
         border-bottom: 1px solid $text-muted;
         display: flex;
@@ -142,6 +143,13 @@ nav.clicked{
         padding: 24px;
         padding-inline: 10px;
       }
+
+      
+      
+      a.active i{
+        rotate: 180deg;
+      }
+
       .drop-down{
       margin-left: 20px;
       display: none;
@@ -175,6 +183,7 @@ nav.clicked{
           font-size: 20px;
         }
       }
+
       li:last-of-type{
           border: 0px;
      
@@ -189,14 +198,8 @@ nav.clicked{
         }
       }
       }
-      a.active {
-        i {
-          rotate: 180deg;
-        }
+
       }
-
-
-    }
 
     .icons-container {
       margin-top: 2rem;

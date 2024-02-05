@@ -4,7 +4,7 @@ const Donate = () => {
   return (
     <>
           <section id="">
-      <div class="container partner-container">
+      <div className="container partner-container">
         <h2>Give a one-time offering</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis

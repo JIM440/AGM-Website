@@ -9,9 +9,9 @@ const Salvation = () => {
 
     {/* <!-- salvation --> */}
     <section id="salvation">
-      <div class="container container-salvation">
+      <div className="container container-salvation">
         <h2>Receive Salvation</h2>
-        <p class="salvation-content mw-content">
+        <p className="salvation-content mw-content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
           debitis recusandae a iusto nesciunt dolorem accusantium facere
           voluptatum dolorum quasi deleniti dicta corrupti similique nobis neque
@@ -35,7 +35,7 @@ const Salvation = () => {
           strengthen. Contact us so we can help you grow in your new life.
           <br /><br />
         </p>
-        <a href="../contact/salvation" class="btn">Receive Salvation</a>
+        <a href="../contact/salvation" className="btn">Receive Salvation</a>
       </div>
     </section>
     </>
