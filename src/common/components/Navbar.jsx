@@ -27,6 +27,15 @@ const toggleDropDownOpen3 = () => {
   setdropDownOpen3(!dropDownOpen3)
 }
 
+const toggleAll = () => {
+  setdropDownOpen3(false)
+  setdropDownOpen2(false)
+  setdropDownOpen1(false)
+  setOpen(false)
+}
+
+
+
   return (
     <>
       {/* NavBar */}
@@ -65,12 +74,12 @@ const toggleDropDownOpen3 = () => {
               <i className="bi bi-chevron-down"></i>
             </a>
             <div className={`drop-down ${dropDownOpen1 ? 'active' : ''}`}>
-              <Link to="about/prophetkevin">Prophet Kevin</Link>
-              <Link to="about/agm">AGM</Link>
+              <Link to="about/" onClick={toggleAll}>Prophet Kevin</Link>
+              <Link to="about/agm" onClick={toggleAll}>AGM</Link>
             </div>
           </li>
           <li>
-            <Link to="/ministry">
+            <Link to="/ministry" onClick={toggleAll}>
               <span>Ministry</span>
             </Link>
           </li>
@@ -81,9 +90,9 @@ const toggleDropDownOpen3 = () => {
               <i className="bi bi-chevron-down"></i>
             </a>
             <div className={`drop-down ${dropDownOpen2 ? 'active' : ''}`}>
-              <Link to="partner/donate">Donation</Link>
-              <Link to="partner/partner">Partner</Link>
-              <Link to="partner/projects">Projects</Link>
+              <Link  onClick={toggleAll} to="partner/donate">Donation</Link>
+              <Link  onClick={toggleAll} to="partner/partner">Partner</Link>
+              <Link  onClick={toggleAll} to="partner/projects">Projects</Link>
             </div>
           </li>
 
@@ -93,35 +102,35 @@ const toggleDropDownOpen3 = () => {
               <i className="bi bi-chevron-down"></i>
             </a>
             <div className={`drop-down ${dropDownOpen3 ? 'active' : ''}`}>
-              <Link to="contact/prayerrequests">Prayer Requests</Link>
+              <Link onClick={toggleAll} to="contact/prayerrequests">Prayer Requests</Link>
               <Link to="contact/testimonies">Testimonies</Link>
-              <Link to="contact/receivesalvation">Receive Salvation</Link>
-              <Link to="contact/counselling">Counselling</Link>
-              <Link to="contact/invitations">Invitations</Link>
-              <Link to="contact/questions">Questions</Link>
-              <Link to="contact/partner">Partner</Link>
-              <Link to="contact/others">Others</Link>
+              <Link onClick={toggleAll} to="contact/receivesalvation">Receive Salvation</Link>
+              <Link onClick={toggleAll} to="contact/counselling">Counselling</Link>
+              <Link onClick={toggleAll} to="contact/invitations">Invitations</Link>
+              <Link onClick={toggleAll} to="contact/questions">Questions</Link>
+              <Link onClick={toggleAll} to="contact/partner">Partner</Link>
+              <Link onClick={toggleAll} to="contact/others">Others</Link>
             </div>
           </li>
 
           <li>
-            <Link to="partner/donate" className="btn">
+            <Link to="partner/donate" className="btn" onClick={toggleAll}>
               Donate
             </Link>
           </li>
         </ul>
 
         <div className="icons-container">
-          <Link to="facebook.com/agmonline">
+          <Link to="facebook.com/agmonline" onClick={toggleAll}>
             <img src={facebook} alt="facebook" />
           </Link>
-          <Link to="youtube.com">
+          <Link to="youtube.com" onClick={toggleAll}>
             <img src={youtube} alt="youtube" />
           </Link>
-          <Link to="instagram.com">
+          <Link to="instagram.com" onClick={toggleAll}>
             <img src={instagram} alt="instagram" />
           </Link>
-          <Link to="twitter.com">
+          <Link to="twitter.com" onClick={toggleAll}>
             <img src={twitter} alt="twitter" />
           </Link>
         </div>
