@@ -1,6 +1,8 @@
-import React from 'react'
+import UseScrollTop from '../../common/components/UseScrollTop';
 
 const Partners = () => {
+  const scrollToTop = UseScrollTop();
+
   return (
     <>
           <section id="">

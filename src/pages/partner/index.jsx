@@ -1,7 +1,9 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
+import UseScrollTop from '../../common/components/UseScrollTop';
 
 const PartnerLayout = () => {
+  const scrollToTop = UseScrollTop();
+
   return (
     <>
           {/* <!-- hero section --> */}

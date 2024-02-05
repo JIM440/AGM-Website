@@ -1,6 +1,6 @@
 #hero {
   margin-top: 4.6rem;
-  background-color: $primary-color;
+
 
 
   .hero-home-image {
@@ -8,6 +8,7 @@
       width: 100%;
       max-width: none;
       height: auto;
+      background-color: $primary-color;
     }
     img.desktop {
       display: none;

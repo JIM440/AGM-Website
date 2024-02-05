@@ -4,8 +4,11 @@ import Favour from '../../assets/images/prophet-kevin/teaching.jpg'
 import Salvation from '../../assets/images/prophet-kevin/prayer.jpg'
 import Prayer from '../../assets/images/prophet-kevin/about-pk.jpg'
 import Healing from '../../assets/images/prophet-kevin/healing.jpg'
+import UseScrollTop from '../../common/components/UseScrollTop'
 
 const ProphetKevin = () => {
+  const scrollToTop = UseScrollTop();
+
   return (
     <>
 

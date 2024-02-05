@@ -1,7 +1,9 @@
-import React from 'react'
 import Banner from '../../common/Banner'
+import UseScrollTop from '../../common/components/UseScrollTop';
 
 const Salvation = () => {
+  const scrollToTop = UseScrollTop();
+
   return (
     <>
           {/* <!-- hero section --> */}

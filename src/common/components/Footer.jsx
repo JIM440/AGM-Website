@@ -74,7 +74,7 @@ const Footer = () => {
             <p>Our Ministry</p>
             <ul>
               <li>
-                <Link to="about">Prophet Kevin</Link>
+                <Link to="about/agm">AGM</Link>
               </li>
               <li>
                 <Link to="articles">Articles</Link>

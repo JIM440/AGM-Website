@@ -4,6 +4,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
   Route,
+  ScrollRestoration,
 } from 'react-router-dom';
 
 // +++++++++++ pages +++++++++++
@@ -14,7 +15,6 @@ import Agm from './pages/about/Agm';
 import ProphetKevin from './pages/about/ProphetKevin';
 
 import NotFound from './pages/notfound/NotFound';
-import Fetch from './Fetch';
 import Salvation from './pages/salvation';
 import Testimonies from './pages/testimony';
 import Articles from './pages/articles/Articles';
@@ -87,14 +87,14 @@ const router = createBrowserRouter(
 
       {/* salvation */}
       <Route path="salvation" element={<Salvation />} />
-      {/* salvation */}
-      <Route path="fetch" element={<Fetch />} />
 
       {/* not found */}
       <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
+
+// used to scroll to top whenever a page is changed
 
 function App() {
   return <RouterProvider router={router} />;

@@ -1,7 +1,10 @@
 import articles from '../../assets/images/header-images/articles.jpeg'
 import Banner from '../../common/Banner'
+import UseScrollTop from '../../common/components/UseScrollTop';
 
 const Articles = () => {
+  const scrollToTop = UseScrollTop();
+
   return (
     <>
         <Banner text='"Q&A, Visions, Counsels, and Prophetic Revelations"' classname='articles' title='articles'/>

@@ -1,7 +1,9 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import UseScrollTop from '../../common/components/UseScrollTop';
 
 const NotFound = () => {
+  const scrollToTop = UseScrollTop();
+
   return (
     // <!-- ==== not found ==== -->
     <section id="notFound">

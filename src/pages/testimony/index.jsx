@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import Banner from '../../common/Banner';
+import UseScrollTop from '../../common/components/UseScrollTop';
 
 const Testimonies = () => {
+  const scrollToTop = UseScrollTop();
+
+
   return (
     <>
       {/* <!-- hero section --> */}

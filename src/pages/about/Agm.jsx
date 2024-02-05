@@ -1,4 +1,8 @@
+import UseScrollTop from "../../common/components/UseScrollTop";
+
 const Agm = () => {
+  const scrollToTop = UseScrollTop();
+
   return (
     <>
     {/* <!--=== intro section ===--> */}

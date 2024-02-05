@@ -13,8 +13,8 @@
 
 body {
   background-color: white;
-  max-width: 1440px;
   margin-inline: auto;
+  position: relative;
 }
 
 img {
@@ -107,12 +107,12 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .even-columns img {
   width: 100%;
   max-width: none;
-  border-radius: 22px;
+  border-radius: 8px;
   background-color: #802EC0;
   min-height: 270px;
 }
@@ -123,7 +123,7 @@ body {
 }
 @media (min-width: 1000px) {
   .even-columns {
-    gap: 2rem;
+    gap: 3rem;
   }
 }
 
@@ -613,7 +613,8 @@ nav {
   width: 100%;
   background-color: white;
   box-shadow: 0 4px 8px rgba(128, 46, 192, 0.4);
-  z-index: 4;
+  z-index: 11;
+  margin: 0 auto;
 }
 nav .container {
   display: flex;
@@ -703,7 +704,7 @@ nav .container .menu-button span {
 }
 
 nav.clicked {
-  transition: 0.6s;
+  transition: 0.8s;
   box-shadow: none;
 }
 
@@ -716,14 +717,18 @@ nav.clicked {
   position: fixed;
   bottom: 32px;
   right: 32px;
-  background-color: #802EC0;
-  display: flex;
+  background-color: #994dd4;
+  display: none;
   align-items: center;
   justify-content: center;
+  z-index: 9;
 }
 .scrollTop i {
   color: white;
   font-size: 24px;
+}
+.scrollTop.active {
+  display: flex;
 }
 
 .mobile-nav {
@@ -734,7 +739,7 @@ nav.clicked {
   gap: 1rem;
   position: fixed;
   top: 0;
-  transition: 0.6s;
+  transition: 0.8s;
   right: -200%;
   width: 100vw;
   padding: 20px;
@@ -744,6 +749,7 @@ nav.clicked {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  z-index: 10;
 }
 .mobile-nav ul {
   display: flex;
@@ -827,7 +833,7 @@ nav.clicked {
 
 .mobile-nav.active {
   right: 0px;
-  transition: 0.6s;
+  transition: 0.8s;
 }
 
 @media (min-width: 1040px) {
@@ -1076,7 +1082,6 @@ nav.clicked {
 
 #hero {
   margin-top: 4.6rem;
-  background-color: #802EC0;
 }
 #hero .hero-home-image {
   max-width: 1440px;
@@ -1086,6 +1091,7 @@ nav.clicked {
   width: 100%;
   max-width: none;
   height: auto;
+  background-color: #802EC0;
 }
 #hero .hero-home-image img.desktop {
   display: none;

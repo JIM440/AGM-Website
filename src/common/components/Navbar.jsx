@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../assets/images/nav-images/logo1.png';
 import facebook from '../../assets/images/nav-images/Facebook.svg';
 import twitter from '../../assets/images/nav-images/Twitter.svg';
@@ -8,11 +8,16 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
+
+  // states
 const [open, setOpen] = useState(false)
 const [dropDownOpen1, setdropDownOpen1] = useState(false)
 const [dropDownOpen2, setdropDownOpen2] = useState(false)
 const [dropDownOpen3, setdropDownOpen3] = useState(false)
+const [topVisible, setTopVisible] = useState(false)
 
+
+// functions
 const toggleOpen = () => {
   setOpen(!open)
 }
@@ -28,18 +33,12 @@ const toggleDropDownOpen3 = () => {
 }
 
 const toggleAll = () => {
-  window.scrollTo({
-    top: 0,
-    behaviour: 'auto',
-  })
   setdropDownOpen3(false)
   setdropDownOpen2(false)
   setdropDownOpen1(false)
   setOpen(false)
-  window.scrollTo({
-    top: 0,
-    behaviour: 'auto',
-  })
+  
+  top()
 }
 
 const top = () => {
@@ -49,6 +48,26 @@ const top = () => {
   })
 }
 
+//useEffect is used to attach the event listener when the component is mounted and detach it otherwise
+useEffect (() => {
+  const handleScroll = () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    if ( scrollY > 100){
+      setTopVisible(true)
+    }
+    else{
+      setTopVisible(false)
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll)
+
+  // return statement is used to remove the event listener before the component is unmounted
+  return () => {
+    window.removeEventListener('scroll', handleScroll)
+  }
+}, [])
 
 
   return (
@@ -56,7 +75,7 @@ const top = () => {
       {/* NavBar */}
       <nav className={open ? "clicked" : ''}>
         <div className="container">
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" onClick={toggleAll}>
             <img src={logo} alt="" />
             <div>
               <h2>Apostolic Gospel Mission</h2>
@@ -74,7 +93,7 @@ const top = () => {
         </div>
       </nav>
 
-<a onClick={top} className="scrollTop">
+<a onClick={top} className={`scrollTop ${topVisible ? "active" : ''}`}>
 <i className="bx bx-up-arrow-alt"></i>
 </a>
 

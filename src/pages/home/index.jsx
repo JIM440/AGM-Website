@@ -1,7 +1,9 @@
 import tower from '../../assets/images/AGM-images/tower.jpeg'
 import Hero from '../../common/Hero';
+import useScrollTop from '../../common/components/UseScrollTop'
 
 const Home = () => {
+  const scrollToTop = useScrollTop();
   return (
     <>
     
