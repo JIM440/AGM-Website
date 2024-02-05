@@ -91,6 +91,10 @@
   h2{
     margin-bottom: 20px;
   }
+  p{
+    font-size: 18px;
+    font-weight: 500;
+  }
   .singlearticle.hero-bg{
     background-image: url(https://godshotspot.files.wordpress.com/2014/06/e4284-jesus-walking-among-7-candlesticks11.jpg?w=522&h=393);
   }
@@ -123,10 +127,15 @@ gap: 1.4rem;
 }
 }
 
+.category-content p{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .single-article.hero-bg{
   background-image: url(https://www.sevenchurchesofapocalypse.com/assets/images/jesus-seven-lampstansd-600x449.jpg);
 }
 
 .articles.hero-bg{
-  background-image: url(https://images.squarespace-cdn.com/content/v1/5a1d221bbce17620f86369aa/1601060610944-1PUIR1O4WTD5ZUXRTS2H/123_1+2.jpeg?format=1500w);
+  background-image: url(./assets/images/header-images/articles.jpeg);
 }

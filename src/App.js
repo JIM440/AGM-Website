@@ -6,11 +6,6 @@ import {
   Route,
 } from 'react-router-dom';
 
-
-
-
-
-
 // +++++++++++ pages +++++++++++
 import Home from './pages/home';
 
@@ -19,47 +14,38 @@ import Agm from './pages/about/Agm';
 import ProphetKevin from './pages/about/ProphetKevin';
 
 import NotFound from './pages/notfound/NotFound';
+import Fetch from './Fetch';
 import Salvation from './pages/salvation';
 import Testimonies from './pages/testimony';
 import Articles from './pages/articles/Articles';
 import Article from './pages/articles/Article';
 
-import Counselling from './pages/contact/Counselling'
-import Invitations from './pages/contact/Invitations'
-import Others from './pages/contact/Others'
-import Partner from './pages/contact/Partner'
-import PrayerRequests from './pages/contact/PrayerRequests'
-import Questions from './pages/contact/Questions'
-import ReceiveSalvation from './pages/contact/ReceiveSalvation'
-import Testimony from './pages/contact/Testimony'
+import Counselling from './pages/contact/Counselling';
+import Invitations from './pages/contact/Invitations';
+import Others from './pages/contact/Others';
+import Partner from './pages/contact/Partner';
+import PrayerRequests from './pages/contact/PrayerRequests';
+import Questions from './pages/contact/Questions';
+import ReceiveSalvation from './pages/contact/ReceiveSalvation';
+import Testimony from './pages/contact/Testimony';
 
-import Project from './pages/partner/Project'
-import Partners from './pages/partner/Partner'
-import Donate from './pages/partner/Donate'
+import Project from './pages/partner/Project';
+import Partners from './pages/partner/Partner';
+import Donate from './pages/partner/Donate';
 
 import Ministry from './pages/ministry';
-
-
-
-
 
 // +++++++++++ layout +++++++++++
 
 import RootLayout from './common/Layout/RootLayout';
-import ContactLayout from './pages/contact/ContactLayout'
+import ContactLayout from './pages/contact/ContactLayout';
 import PartnerLayout from './pages/partner';
-
-
-
-
 
 // +++++++++++ Routes +++++++++++
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-
     <Route path="/" element={<RootLayout />}>
-
       {/* Home */}
       <Route index element={<Home />} />
 
@@ -101,17 +87,14 @@ const router = createBrowserRouter(
 
       {/* salvation */}
       <Route path="salvation" element={<Salvation />} />
+      {/* salvation */}
+      <Route path="fetch" element={<Fetch />} />
 
       {/* not found */}
       <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
-
-
-
-
-
 
 function App() {
   return <RouterProvider router={router} />;

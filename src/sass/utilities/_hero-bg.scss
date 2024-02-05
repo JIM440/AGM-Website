@@ -1,43 +1,57 @@
-.hero-bg{
-    margin-top: 83px;
+.hero-bg {
+  margin-top: 70px;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rebeccapurple;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: end;
     min-height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rebeccapurple;
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        justify-content: end;
-        min-height: 400px;
-
-
-        *{
-            color: $white;
-        }
-
-        @include breakpointDynamic(600px){
-            p{
-                font-size: 2rem;
-                font-weight: bold;
-            }
-            h1{
-                font-weight: 400;
-                font-size: 1.4rem;
-            }
-        }
+    h1 {
+      font-size: 2.5rem;
+      color: $primary-color;
+      text-transform: capitalize;
+      text-shadow: 0px 0px 1px $black;
     }
-    @include breakpointDynamic(560px){
-        &{
-            margin-top: 105px;
-            min-height: 500px;
-            background-position: unset;
-
-            .container{
-                min-height: 500px;
-            }
-        }
+    p {
+      font-size: 1.4rem;
     }
+
+    * {
+      color: $white;
+    }
+
+    @include breakpointDynamic(600px) {
+      p {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 4.4rem;
+      }
+    }
+  }
+  @include breakpointDynamic(560px) {
+    & {
+      margin-top: 105px;
+      min-height: 500px;
+      background-position: unset;
+
+      .container {
+        min-height: 500px;
+      }
+    }
+  }
+  @include breakpointDynamic(400px) {
+    & {
+      margin-top: 83px;
+    }
+  }
 }

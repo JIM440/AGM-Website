@@ -7,6 +7,9 @@
       img {
         width: 100%;
         max-width: none;
+        border-radius: 22px;
+        background-color: $primary-color;
+        min-height: 270px;
       }
       
       @include breakpointDynamic(730px) {

@@ -1,15 +1,11 @@
 import React from 'react'
+import Banner from '../../common/Banner'
 
 const Salvation = () => {
   return (
     <>
           {/* <!-- hero section --> */}
-    <section class="hero-bg salvation">
-      <div class="container">
-        <h1>Receive Christ</h1>
-        <p>"Receive Christ today and experince his love"</p>
-      </div>
-    </section>
+    <Banner text='"Receive Christ Today and Experience His Love!"' title="Receive Salvation" classname="salvation"/>
 
     {/* <!-- salvation --> */}
     <section id="salvation">
@@ -39,10 +35,9 @@ const Salvation = () => {
           strengthen. Contact us so we can help you grow in your new life.
           <br /><br />
         </p>
-        <a href="../contact/salvation.html" class="btn">Receive Salvation</a>
+        <a href="../contact/salvation" class="btn">Receive Salvation</a>
       </div>
     </section>
-
     </>
   )
 }

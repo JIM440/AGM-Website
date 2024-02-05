@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     // <!-- ==== not found ==== -->
     <section id="notFound">
-      <div class="container">
+      <div className="container">
         <h1>404</h1>
         <p>Sorry 😥 , can't find this page</p>
         <p><span>Return to </span><Link to="/">Home Page</Link></p>
