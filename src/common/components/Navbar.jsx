@@ -42,6 +42,13 @@ const toggleAll = () => {
   })
 }
 
+const top = () => {
+  window.scrollTo({
+    top: 0,
+    behaviour: 'smooth',
+  })
+}
+
 
 
   return (
@@ -66,6 +73,10 @@ const toggleAll = () => {
           </div>
         </div>
       </nav>
+
+<a onClick={top} className="scrollTop">
+<i className="bx bx-up-arrow-alt"></i>
+</a>
 
       {/* <!-- mobile nav --> */}
       <div className ={`mobile-nav ${open ? 'active' : ''}`}>

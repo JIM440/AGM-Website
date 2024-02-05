@@ -1,5 +1,5 @@
 #hero {
-  margin-top: 5rem;
+  margin-top: 4.6rem;
   background-color: $primary-color;
 
 
@@ -26,9 +26,15 @@
   }
 }
 
-@include breakpointDynamic(700px){
+@include breakpointDynamic(400px){
   #hero{
-    margin-top: 5.8rem;
+    margin-top: 5rem;
+  }
+}
+
+@include breakpointDynamic(560px){
+  #hero{
+    margin-top: 6rem;
   }
 }
 
