@@ -2,6 +2,9 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
 const ContactLayout = () => {
+  const top = () => {
+    window.scrollTo({top: 0, behaviour: 'auto'})
+  }
   return (
     <>
       <section id="contact-form" className="prayer-requests">
@@ -20,14 +23,14 @@ const ContactLayout = () => {
 
           {/* <!-- nav links --> */}
           <div className="nav-links">
-            <NavLink to="prayerrequests">Prayer Requests</NavLink>
-            <NavLink to="testimonies">Testimonies</NavLink>
-            <NavLink to="salvation">Receive Salvation</NavLink>
-            <NavLink to="counselling">Counselling</NavLink>
-            <NavLink to="invitation">Invitations</NavLink>
-            <NavLink to="questions">Questions</NavLink>
-            <NavLink to="partner">Partner</NavLink>
-            <NavLink to="others">Others</NavLink>
+            <NavLink to="prayerrequests" onClick={top}>Prayer Requests</NavLink>
+            <NavLink to="testimonies" onClick={top}>Testimonies</NavLink>
+            <NavLink to="salvation" onClick={top}>Receive Salvation</NavLink>
+            <NavLink to="counselling" onClick={top}>Counselling</NavLink>
+            <NavLink to="invitation" onClick={top}>Invitations</NavLink>
+            <NavLink to="questions" onClick={top}>Questions</NavLink>
+            <NavLink to="partner" onClick={top}>Partner</NavLink>
+            <NavLink to="others" onClick={top}>Others</NavLink>
           </div>
 
           {/* Outlet Start Here */}

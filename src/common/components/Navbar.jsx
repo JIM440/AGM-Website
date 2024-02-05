@@ -28,10 +28,18 @@ const toggleDropDownOpen3 = () => {
 }
 
 const toggleAll = () => {
+  window.scrollTo({
+    top: 0,
+    behaviour: 'auto',
+  })
   setdropDownOpen3(false)
   setdropDownOpen2(false)
   setdropDownOpen1(false)
   setOpen(false)
+  window.scrollTo({
+    top: 0,
+    behaviour: 'auto',
+  })
 }
 
 
@@ -63,7 +71,7 @@ const toggleAll = () => {
       <div className ={`mobile-nav ${open ? 'active' : ''}`}>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/" onClick={toggleAll}>
               <span>Home</span>
             </Link>
           </li>
@@ -104,7 +112,7 @@ const toggleAll = () => {
             <div className={`drop-down ${dropDownOpen3 ? 'active' : ''}`}>
               <Link onClick={toggleAll} to="contact/prayerrequests">Prayer Requests</Link>
               <Link to="contact/testimonies">Testimonies</Link>
-              <Link onClick={toggleAll} to="contact/receivesalvation">Receive Salvation</Link>
+              <Link onClick={toggleAll} to="contact/salvation">Receive Salvation</Link>
               <Link onClick={toggleAll} to="contact/counselling">Counselling</Link>
               <Link onClick={toggleAll} to="contact/invitations">Invitations</Link>
               <Link onClick={toggleAll} to="contact/questions">Questions</Link>
