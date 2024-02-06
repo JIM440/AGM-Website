@@ -31,9 +31,10 @@
       h2 {
         font-weight: 600;
         color: $primary-color;
+        font-size: 2rem;
       }
       p {
-        font-size: 14px;
+        font-size: 18px;
       }
 
       .asterisk span {
@@ -101,7 +102,7 @@
 #contact-info{
     .container{
         .even-columns{
-            gap: 1.2rem;
+            gap: 3rem;
 
             .even-column-img{
                
@@ -110,7 +111,7 @@
                     max-width: none;
                     height: auto;
                     min-height: 300px;
-                    border-radius: 22px;
+                    border-radius: 8px;
                 }
             }
 

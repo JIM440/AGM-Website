@@ -41,13 +41,9 @@ const Home = () => {
       <div className="container">
         <div className="even-columns">
           <div>
+            <h2 className="header">Welcome To AGM!</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              exercitationem iste sit cupiditate cum, ducimus repellendus unde
-              at in incidunt eligendi eum, labore accusamus aut tenetur deserunt
-              rerum animi, odit sapiente dolorem? Porro iusto ipsum cum totam
-              rem dolores minima, sapiente explicabo! Odio maxime, modi
-              praesentium repudiandae fugiat odit rem?
+              Welcome to the Apostolic Gospel Mission, where Jesus gives men beauty for ashes. By establishing His kingdom, power and glory in your life, keeping you in the Light and teaching you how to walk in Light. AGM is a church of God and therefore under the leadership of the Holy Spirit. The Holy Spirit through His wisdom has made Prophet Kevin and Rev. Karen Overseers of AGM. For questions, prayer requests, invitations or testimonies feel free to contact us.
             </p>
             <div className="btn-container">
               <a href="./about/agm" className="btn btn-white">Learn More</a>
@@ -66,6 +62,7 @@ const Home = () => {
     <section id="featured-content">
       <div className="container">
         <h2 className="header">Featured Content</h2>
+        <p>Gain spiritual insight and inspiration the collection of articles written down by Prophet through the inspiration of the Holy Spirit</p>
         <h3>Q & A</h3>
         <div className="content-container">
           <div className="content-box">
@@ -190,7 +187,7 @@ const Home = () => {
         <div className="product-container">
           <div className="product-box book-card">
             <img src="https://www.redemptionstore.church/cdn/shop/products/Good-Morning-Holy-Spirit_800x.png?v=1583535433" alt="" />
-            <p><span>The Horn Of Favor</span> by Prophet Kevin Nubidga</p>
+            <h3><span>The Horn Of Favor</span> by Prophet Kevin N.</h3>
             <div>
               <p className="price">$10</p>
               <button className="btn">Order Now</button>

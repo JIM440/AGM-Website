@@ -1,6 +1,33 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import UseScrollTop from '../../common/components/UseScrollTop';
+import Faqs from '../home/components/Faqs';
+
+
+const data = [
+  {
+    "question": "question 1 tag here",
+    "answer": "answer 1 answer here"
+  },
+  {
+    "question": "question 2 tag here",
+    "answer": "answer 2 answer here"
+  },
+  {
+    "question": "question 3 tag here",
+    "answer": "answer 3 answer here"
+  },
+  {
+    "question": "question 4 tag here",
+    "answer": "answer 4 answer here"
+  },
+  {
+    "question": "question 5 tag here",
+    "answer": "answer 5 answer here"
+  }
+]
+
+
 
 const ContactLayout = () => {
   const scrollToTop = UseScrollTop()
@@ -44,63 +71,14 @@ const ContactLayout = () => {
       </section>
 
       {/* <!-- ==== ========= faqs section ========== ==== --> */}
-      <section id="faqs-section">
-        <div className="container container-faqs-section">
-          <h2 className="header">Frequently Asked Questions</h2>
-          <div className="faqs-container">
-            <div className="faqs">
-              <div className="question">
-                <h3>Who are we?</h3>
-                <i className="bi bi-chevron-down"></i>
-              </div>
-              <p className="answer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-                voluptas suscipit?
-              </p>
-            </div>
-            <div className="faqs">
-              <div className="question">
-                <h3>How can I give to AGM?</h3>
-                <i className="bi bi-chevron-down"></i>
-              </div>
-              <p className="answer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-                voluptas suscipit?
-              </p>
-            </div>
-            <div className="faqs">
-              <div className="question">
-                <h3>How can I become a partner?</h3>
-                <i className="bi bi-chevron-down"></i>
-              </div>
-              <p className="answer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-                voluptas suscipit?
-              </p>
-            </div>
-            <div className="faqs">
-              <div className="question">
-                <h3>How can I get help?</h3>
-                <i className="bi bi-chevron-down"></i>
-              </div>
-              <p className="answer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-                voluptas suscipit?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Faqs data={data}/>
 
       {/* <!-- --------- ------- contact info ------- ----------- --> */}
       <section id="contact-info">
         <div className="container">
           <div className="even-columns">
             <div>
+              <h2 className="header">Contact Info</h2>
               <div>
                 <i className="bi bi-geo-alt-fill"></i>
                 <p>Preventive street Buea-road Kumba, South-West Cameroon</p>

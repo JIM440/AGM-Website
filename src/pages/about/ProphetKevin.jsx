@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import IntroImage from '../../assets/images/prophet-kevin/about-pk.jpg'
 import Deliverance from '../../assets/images/prophet-kevin/salvation.jpg'
 import Favour from '../../assets/images/prophet-kevin/teaching.jpg'
@@ -117,6 +118,18 @@ const ProphetKevin = () => {
               autem optio corrupti?
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    {/* -----------  Invite   --------- */}
+    <section id="invite">
+      <div className="container">
+        <div>
+        <h3>Invite Prophet Kevin N.</h3>
+        <p>Experience the transformative power of God's presence in your church by inviting Prophet Kevin N. to come and minister. Witness lives changed, the sick healed, and unlock the extraordinary move of God in your congregation</p>
+        <Link to="/contact/invitations" className="btn">Invite Now</Link>
         </div>
       </div>
     </section>
