@@ -27,7 +27,7 @@ const data = [
 
 
 const Home = () => {
-  
+
   const scrollToTop = useScrollTop();
 
   return (
@@ -267,7 +267,7 @@ CONTENDING FOR THE FAITH By Prophet Kevin N. </h3>
             </div>
           </div>
           {/* <!-- side news --> */}
-          {/* <SideNews /> */}
+          <SideNews />
         </div>
       </div>
     </section>
