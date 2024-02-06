@@ -7,6 +7,11 @@
 .partner-container {
   max-width: 1000px;
 
+  h2{
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+
   li {
     list-style: circle;
     margin-left: 20px;
@@ -15,6 +20,16 @@
   .even-columns {
     margin-top: 3.5rem;
 
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 14px;
+
+      li{
+        list-style: disc;
+      }
+    }
     img {
       height: 250px;
       width: 100%;
@@ -35,6 +50,8 @@
 
   h2 {
     text-align: center;
+    margin-bottom: 1rem;    color: $primary-color;
+
   }
   .payment-boxes {
     margin-top: 1.2rem;
@@ -47,7 +64,7 @@
       flex-direction: column;
       align-items: start;
       gap: 0.8rem;
-      width: 150px;
+      width: 100px;
       padding: 10px;
       border: 1px solid $text-muted;
       border-radius: 8px;
@@ -60,12 +77,14 @@
       p,
       span {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
       }
 
       img {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        margin-inline: auto;
       }
     }
   }

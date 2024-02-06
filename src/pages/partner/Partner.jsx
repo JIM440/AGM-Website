@@ -34,11 +34,10 @@ const Partners = () => {
               et doloremque, nesciunt molestiae deserunt.
             </p>
             <ul>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
+              <li>A personal partner number.</li>
+              <li>Partner meet ups.</li>
+              <li>Notice of upcoming crusades and events.</li>
+              <li>A dedicated prayer and counseling telephone line.</li>
             </ul>
           </div>
           <img src="" alt="" />

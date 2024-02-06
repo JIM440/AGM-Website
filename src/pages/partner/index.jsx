@@ -1,5 +1,29 @@
 import { Outlet } from 'react-router-dom'
 import UseScrollTop from '../../common/components/UseScrollTop';
+import Faqs from '../home/components/Faqs';
+
+const faqs = [
+  {
+    "question": "sample partner questions",
+    "answer": "sample partner answer"
+  },
+  {
+    "question": "sample partner questions",
+    "answer": "sample partner answer"
+  },
+  {
+    "question": "sample partner questions",
+    "answer": "sample partner answer"
+  },
+  {
+    "question": "sample partner questions",
+    "answer": "sample partner answer"
+  },
+  {
+    "question": "sample partner questions",
+    "answer": "sample partner answer"
+  }
+]
 
 const PartnerLayout = () => {
   const scrollToTop = UseScrollTop();
@@ -34,7 +58,7 @@ const PartnerLayout = () => {
           </div>
           <div className="payment-box">
             <img
-              src="https://logos-world.net/wp-content/uploads/2020/08/PayPal-Symbol.png"
+              src="https://img1.wsimg.com/isteam/ip/62afe4f1-673c-43de-8e7f-5624bd5cc75b/Color-Paypal-Logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,cg:true"
               alt=""
             />
             <span>exampleemail@user.com</span>
@@ -65,57 +89,7 @@ const PartnerLayout = () => {
     </section>
 
     {/* <!-- ==== ========= faqs section ========== ==== --> */}
-    <section id="faqs-section">
-      <div className="container container-faqs-section">
-        <h2 className="header">Frequently Asked Questions</h2>
-        <div className="faqs-container">
-          <div className="faqs">
-            <div className="question">
-              <h3>Who are we?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p className="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-          <div className="faqs">
-            <div className="question">
-              <h3>How can I give to AGM?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p className="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-          <div className="faqs">
-            <div className="question">
-              <h3>How can I become a partner?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p className="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-          <div className="faqs">
-            <div className="question">
-              <h3>How can I get help?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p classNamew="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Faqs data={faqs}/>
 
     </>
   )

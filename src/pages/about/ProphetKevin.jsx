@@ -129,7 +129,7 @@ const ProphetKevin = () => {
         <div>
         <h3>Invite Prophet Kevin N.</h3>
         <p>Experience the transformative power of God's presence in your church by inviting Prophet Kevin N. to come and minister. Witness lives changed, the sick healed, and unlock the extraordinary move of God in your congregation</p>
-        <Link to="/contact/invitations" className="btn">Invite Now</Link>
+        <Link to="/contact/invitation" className="btn">Invite Now</Link>
         </div>
       </div>
     </section>

@@ -77,9 +77,8 @@
           textarea {
             height: 100px;
           }
-        }
 
-       
+        }
 
         @include breakpointDynamic(700px) {
           grid-template-columns: 1fr 1fr;
@@ -88,7 +87,14 @@
             grid-column: span 2;
         }
         } 
-        
+        button.btn{
+          padding: 10px 32px;
+          width: fit-content;
+          height: fit-content;
+          font-size: 18px;
+          font-weight: 500;
+          align-self: center;
+        }
       }
     }
   }
