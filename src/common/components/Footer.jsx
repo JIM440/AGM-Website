@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from '../../assets/images/nav-images/logo1.png';
 import { Link } from 'react-router-dom';
-
+import UseScrollTop from './UseScrollTop';
 const Footer = () => {
+
   return (
     <footer id="footer">
       <div className="container">
@@ -65,7 +66,9 @@ const Footer = () => {
                 <Link to="partner">Partner</Link>
               </li>
               <li>
-                <Link to="contact/prayerrequests">Contact</Link>
+                <Link to="contact/prayerrequests">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -90,9 +93,6 @@ const Footer = () => {
           <div className="footer-grid-box contact">
             <p>Contact</p>
             <ul>
-              <li>
-                <Link to="contact/prayerrequests">Contact Us</Link>
-              </li>
               <li>
                 <i className="bx bxs-phone"></i>
                 <p>656842532</p>

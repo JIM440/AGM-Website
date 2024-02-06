@@ -114,7 +114,7 @@ const Testimonies = () => {
             </div>
           </div>
           <div className="btn-container">
-            <Link to="contact/testimonies" className="btn btn-white">
+            <Link to="/contact/testimonies" className="btn btn-white">
               Add Your Testimony
             </Link>
           </div>

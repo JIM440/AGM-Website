@@ -129,8 +129,8 @@ useEffect (() => {
             </a>
             <div className={`drop-down ${dropDownOpen2 ? 'active' : ''}`}>
               <Link  onClick={toggleAll} to="partner/donate">Donation</Link>
-              <Link  onClick={toggleAll} to="partner/partner">Partner</Link>
-              <Link  onClick={toggleAll} to="partner/projects">Projects</Link>
+              <Link  onClick={toggleAll} to="partner/">Partner</Link>
+              <Link  onClick={toggleAll} to="partner/project">Projects</Link>
             </div>
           </li>
 

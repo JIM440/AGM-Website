@@ -1,6 +1,7 @@
 // when making json for vidos, categorise them as ministry teaching healing etc.
 import facebook from '../../assets/images/nav-images/Facebook.svg';
 import instagram from '../../assets/images/nav-images/Instagram.svg';
+import SideNews from '../../common/SideNews';
 import UseScrollTop from '../../common/components/UseScrollTop';
 
 const Ministry = () => {
@@ -275,103 +276,8 @@ const Ministry = () => {
               </div>
             </div>
             {/* <!-- side news --> */}
-            <div className="side-news">
-              <div className="side-news-card">
-                <div className="side-news-image">
-                  <img
-                    src="https://www.dioceseoflaredo.org/sites/default/files/images/Technology/cross-sunset-humility-devotion-161089-e1505933053195.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div className="side-news-text">
-                  <h2>Receive Christ</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit, repudiandae.
-                  </p>
-                  <a href="" className="btn">
-                    Receive Christ
-                  </a>
-                </div>
-              </div>
-              <div className="subscribe">
-                <div>
-                  <img
-                    src="https://scontent-lis1-1.xx.fbcdn.net/v/t39.30808-1/415987895_914223870095213_4984103714017541932_n.jpg?stp=dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=596444&_nc_ohc=Du_2e5m_thUAX9DIbrB&_nc_ht=scontent-lis1-1.xx&cb_e2o_trans=t&oh=00_AfB1wrdinV13L2Tpbgmbej7Ir6CzLS58jQ4ZMpCmW9072w&oe=6599D2AC"
-                    alt=""
-                  />
-                  <h2>Prophet Kevin Online</h2>
-                </div>
-                <div className="btns">
-                  <a
-                    href="../facebook.com/prophetkevinonline"
-                    className="btn fb"
-                  >
-                    <img src={facebook} alt="facebook link" />
-                    <p>Follow</p>
-                  </a>
-                  <a
-                    href="../youtube.com/prophetkevinonline"
-                    className="btn yt"
-                  >
-                    <i className="bi bi-youtube"></i>
-                    <p>Subscribe</p>
-                  </a>
-                </div>
-              </div>
-              <div className="news-letter">
-                <h3>Join Our Newsletter</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                  suscipit dolorum unde voluptatem.
-                </p>
-                <form action="">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter Your Email"
-                  />
-                  <button type="submit" className="btn">
-                    Send
-                  </button>
-                </form>
-              </div>
-              <div className="side-news-card">
-                <div className="side-news-image">
-                  <img src="https://holyspirit.tv/img/book.png" alt="" />
-                </div>
-                <div className="side-news-text">
-                  <h3>Book Name</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit, repudiandae.
-                  </p>
-                  <a href="" className="btn">
-                    Order Now
-                  </a>
-                </div>
-              </div>
-
-              <div className="side-news-card">
-                <div className="side-news-image">
-                  <img
-                    src="https://images.squarespace-cdn.com/content/v1/5a1d221bbce17620f86369aa/1656545664935-BKIQSX7ETWBB0Y4E58Y6/PartnerGiving.jpg?format=1500w"
-                    alt=""
-                  />
-                </div>
-                <div className="side-news-text">
-                  <h3>Become a partner</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit, repudiandae.
-                  </p>
-                  <a href="../partner/partner.html" className="btn">
-                    Become a partner
-                  </a>
-                </div>
-              </div>
-            </div>
+            
+            <SideNews />
           </div>
         </div>
       </section>

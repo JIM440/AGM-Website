@@ -4,7 +4,6 @@ import {
   createRoutesFromElements,
   RouterProvider,
   Route,
-  ScrollRestoration,
 } from 'react-router-dom';
 
 // +++++++++++ pages +++++++++++

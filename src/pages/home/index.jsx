@@ -1,9 +1,35 @@
 import tower from '../../assets/images/AGM-images/tower.jpeg'
 import Hero from '../../common/Hero';
+import SideNews from '../../common/SideNews';
 import useScrollTop from '../../common/components/UseScrollTop'
+import Faqs from './components/Faqs';
+
+
+const data = [
+  {
+    question: 'who art thou o ye son of man1',
+    answer: 'who art thou o ye son of man1',
+  },
+  {
+    question: 'who art thou o ye son of man2',
+    answer: 'who art thou o ye son of man2',
+  },
+  {
+    question: 'who art thou o ye son of man3',
+    answer: 'who art thou o ye son of man3',
+  },
+  {
+    question: 'who art thou o ye son of man4',
+    answer: 'who art thou o ye son of man4',
+  },
+];
+
+
 
 const Home = () => {
+  
   const scrollToTop = useScrollTop();
+
   return (
     <>
     
@@ -241,143 +267,12 @@ CONTENDING FOR THE FAITH By Prophet Kevin N. </h3>
             </div>
           </div>
           {/* <!-- side news --> */}
-          <div className="side-news">
-            <div className="side-news-card">
-              <div className="side-news-image">
-                <img src="https://www.dioceseoflaredo.org/sites/default/files/images/Technology/cross-sunset-humility-devotion-161089-e1505933053195.jpeg" alt="" />
-              </div>
-              <div className="side-news-text">
-                <h3>Receive Christ</h3>
-                <p>
-                  Experience the love of Christ and it's transforming power that brings hope and eternal joy to your life.
-                </p>
-                <a href="salvation" className="btn">Receive Christ</a>
-              </div>
-            </div>
-            <div className="subscribe">
-              <div>
-                <img src="https://scontent-lis1-1.xx.fbcdn.net/v/t39.30808-1/415987895_914223870095213_4984103714017541932_n.jpg?stp=dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=596444&_nc_ohc=Du_2e5m_thUAX9DIbrB&_nc_ht=scontent-lis1-1.xx&cb_e2o_trans=t&oh=00_AfB1wrdinV13L2Tpbgmbej7Ir6CzLS58jQ4ZMpCmW9072w&oe=6599D2AC" alt="" />
-                <div>
-                  <h3>Prophet Kevin Online</h3>
-                  <p><span>54k Followers</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2k subscribers</span></p>
-                </div>
-              </div>
-              <div className="btns">
-                <a href="facebook.com/prophetkevinonline" className="btn fb">
-                  <img
-                    src="public/assets/images/Facebook.svg"
-                    alt="facebook link"
-                  />
-                  <p>Follow</p>
-                </a>
-                <a href="youtube.com/prophetkevinonline" className="btn yt">
-                  <i className="bi bi-youtube"></i>
-                  <p>Subscribe</p>
-                </a>
-              </div>
-            </div>
-            <div className="news-letter">
-              <h3>Join Our Newsletter</h3>
-              <p>
-                Sign up to our newletter to receive updates of upcoming events and new materials that will build you up spiritually.
-              </p>
-              <form action="">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter Your Email"
-                />
-                <button type="submit" className="btn">Send</button>
-              </form>
-            </div>
-            <div className="side-news-card">
-              <div className="side-news-image">
-                <img src="https://holyspirit.tv/img/book.png" alt="" />
-              </div>
-              <div className="side-news-text">
-                <h3>The Oil Of Favour</h3>
-                <p>
-                  Experience God's Favor and discover how to align yourself with God's purpose, opening the floodgates to abundant blessings and extraordinary miracles.
-                </p>
-                <a href="" className="btn">Order Now</a>
-              </div>
-            </div>
-
-            <div className="side-news-card">
-              <div className="side-news-image">
-                <img src="https://images.squarespace-cdn.com/content/v1/5a1d221bbce17620f86369aa/1656545664935-BKIQSX7ETWBB0Y4E58Y6/PartnerGiving.jpg?format=1500w" alt="" />
-              </div>
-              <div className="side-news-text">
-                <h3>Become a partner</h3>
-                <p>
-                  Help us reach more people by partnering with us. Join us in sharing the life-transforming message of hope and salvation.
-                </p>
-                <a href="contact/partner" className="btn">Become a partner</a>
-              </div>
-            </div>
-          </div>
+          {/* <SideNews /> */}
         </div>
       </div>
     </section>
 
-    {/* <!-- ==== ========= faqs section ========== ==== --> */}
-    <section id="faqs-section">
-      <div className="container container-faqs-section">
-        <h2 className="header">Frequently Asked Questions</h2>
-        <div className="faqs-container">
-          <div className="faqs">
-            <div className="question">
-              <h3>Who are we?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p className="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-          <div className="faqs">
-            <div className="question">
-              <h3>How can I give to AGM?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p className="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-          <div className="faqs">
-            <div className="question">
-              <h3>How can I become a partner?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p className="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-          <div className="faqs">
-            <div className="question">
-              <h3>How can I get help?</h3>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-            <p className="answer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              tempora veniam laboriosam pariatur fugiat magnam odit hic, quam
-              voluptas suscipit?
-            </p>
-          </div>
-        </div>
-        <div className="more-questions">
-          <h3>Still have questions?</h3>
-          <p>If you still have questions, feel free to contact us.</p>
-          <a href="contact/questions" className="btn">Contact Us</a>
-        </div>
-      </div>
-    </section>
+ <Faqs data={data}/>
 
 </>
   );
