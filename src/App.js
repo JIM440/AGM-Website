@@ -13,12 +13,6 @@ import About from './pages/about';
 import Agm from './pages/about/Agm';
 import ProphetKevin from './pages/about/ProphetKevin';
 
-import NotFound from './pages/notfound/NotFound';
-import Salvation from './pages/salvation';
-import Testimonies from './pages/testimony';
-import Articles from './pages/articles/Articles';
-import Article from './pages/articles/Article';
-
 import Counselling from './pages/contact/Counselling';
 import Invitations from './pages/contact/Invitations';
 import Others from './pages/contact/Others';
@@ -32,7 +26,15 @@ import Project from './pages/partner/Project';
 import Partners from './pages/partner/Partner';
 import Donate from './pages/partner/Donate';
 
-import Ministry from './pages/ministry';
+import Ministry from './pages/ministry/Ministry';
+import Salvation from './pages/ministry/Salvation';
+import Testimonies from './pages/ministry/Testimony';
+import Articles from './pages/ministry/articles/Articles';
+import Article from './pages/ministry/articles/Article';
+
+import NotFound from './pages/notfound/NotFound';
+
+import Fetch from './Fetch';
 
 // +++++++++++ layout +++++++++++
 
@@ -55,13 +57,20 @@ const router = createBrowserRouter(
       </Route>
 
       {/* ministry */}
-      <Route path="ministry" element={<Ministry />} />
+      <Route path="ministry">
+      <Route index element={<Ministry />} /> 
+        <Route path="salvation" element={<Salvation />} />
+        <Route path="testimonies" element={<Testimonies />} />
+        <Route path="articles" element={<Articles />}>
+        <Route path=":id" element={<Article />} />
+        </Route>
+      </Route>
 
       {/* partner */}
       <Route path="partner" element={<PartnerLayout />}>
         <Route index element={<Partners />} />
-        <Route path="project" element={<Project />} />
-        <Route path="donate" element={<Donate />} />
+        <Route path="projects" element={<Project />} />
+        <Route path="donate" element={<Donate />} /> 
       </Route>
 
       {/* contact */}
@@ -69,23 +78,14 @@ const router = createBrowserRouter(
         <Route path="prayerrequests" element={<PrayerRequests />} />
         <Route path="testimonies" element={<Testimony />} />
         <Route path="questions" element={<Questions />} />
-        <Route path="invitation" element={<Invitations />} />
+        <Route path="invitations" element={<Invitations />} />
         <Route path="others" element={<Others />} />
         <Route path="partner" element={<Partner />} />
         <Route path="salvation" element={<ReceiveSalvation />} />
         <Route path="counselling" element={<Counselling />} />
       </Route>
 
-      {/* articles */}
-      <Route path="articles" element={<Articles />}>
-        <Route path=":id" element={<Article />} />
-      </Route>
-
-      {/* testimonies */}
-      <Route path="testimonies" element={<Testimonies />} />
-
-      {/* salvation */}
-      <Route path="salvation" element={<Salvation />} />
+      <Route path="fetch" element={<Fetch />} />
 
       {/* not found */}
       <Route path="*" element={<NotFound />} />

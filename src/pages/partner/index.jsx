@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import UseScrollTop from '../../common/components/UseScrollTop';
-import Faqs from '../home/components/Faqs';
+import Faqs from '../contact/component/Faqs';
 
 const faqs = [
   {

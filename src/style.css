@@ -113,7 +113,7 @@ body {
   width: 100%;
   max-width: none;
   border-radius: 8px;
-  background-color: #802EC0;
+  background-color: #877B7B;
   min-height: 270px;
 }
 @media (min-width: 730px) {
@@ -302,17 +302,12 @@ body {
   justify-content: space-between;
   align-items: start;
 }
-@media (min-width: 980px) {
-  .video-container {
-    grid-template-columns: 2.5fr 1.5fr;
-  }
-}
 .video-container .videos {
   padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  max-width: 650px;
+  max-width: 750px;
 }
 .video-container .videos .header {
   margin-top: 2.5rem;
@@ -390,72 +385,6 @@ body {
 .video-container .side-news .side-news-card .btn {
   margin-top: 1rem;
   align-self: flex-end;
-}
-.video-container .side-news .news-letter {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.video-container .side-news .news-letter form {
-  display: flex;
-  gap: 0px;
-  align-items: center;
-}
-.video-container .side-news .news-letter form input {
-  width: 100%;
-  border: 1px solid #877B7B;
-  font-size: 1rem;
-  padding: 6px;
-  border-top-left-radius: 6px;
-  color: black;
-  border-bottom-left-radius: 6px;
-  height: 34px;
-}
-.video-container .side-news .news-letter form .btn {
-  padding: 6px;
-  padding-inline: 10px;
-  border-radius: 0px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  height: 34px;
-  width: 70px;
-}
-.video-container .side-news .subscribe > div:first-of-type {
-  width: 100%;
-  display: flex;
-  gap: 1rem;
-}
-.video-container .side-news .subscribe > div:first-of-type img {
-  height: 100px;
-  max-width: 100px;
-  min-width: 80px;
-  border-radius: 8px;
-}
-.video-container .side-news .subscribe > div:first-of-type h3 {
-  width: 100%;
-}
-.video-container .side-news .subscribe .btns {
-  display: flex;
-  gap: 1rem;
-}
-.video-container .side-news .subscribe .btns a.btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 10px;
-}
-.video-container .side-news .subscribe .btns .yt {
-  background-color: #FF3D00;
-}
-.video-container .side-news .subscribe .btns .yt i {
-  font-size: 20px;
-}
-.video-container .side-news .subscribe .btns .fb {
-  background-color: #3F51B5;
-}
-.video-container .side-news .subscribe .btns .fb img {
-  width: 28px;
-  height: 28px;
 }
 
 #faqs-section .container-faqs-section {
@@ -661,16 +590,20 @@ nav .container .logo h2 {
 }
 @media (min-width: 560px) {
   nav .container .logo {
-    max-width: 400px;
+    width: 380px;
+    min-width: 350px;
   }
   nav .container .logo p {
     font-size: 14px;
   }
-  nav .container .logo h2 {
-    font-size: 24px;
-  }
   nav .container .logo img {
     width: 80px;
+  }
+}
+@media (min-width: 1000px) {
+  nav .container .logo {
+    max-width: 346px;
+    min-width: 344px;
   }
 }
 nav .container i {
@@ -678,6 +611,80 @@ nav .container i {
   color: black;
   font-weight: bold;
   cursor: pointer;
+}
+nav .container .desktop-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 2rem;
+  max-width: 670px;
+}
+nav .container .desktop-nav a, nav .container .desktop-nav p {
+  font-size: 18px;
+  color: black;
+}
+nav .container .desktop-nav .btn {
+  color: white;
+  padding-inline: 9px;
+}
+nav .container .desktop-nav .drop-down {
+  padding-inline: 9px;
+}
+nav .container .desktop-nav .drop-down button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+}
+nav .container .desktop-nav .drop-down button p {
+  font-size: 18px;
+}
+nav .container .desktop-nav .drop-down button i {
+  font-size: 18px;
+}
+nav .container .desktop-nav .drop-down .drop-down-menu-container {
+  display: none;
+  padding-top: 40px;
+  position: absolute;
+}
+nav .container .desktop-nav .drop-down .drop-down-menu-container .drop-down-menu {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(128, 46, 192, 0.4);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 200px;
+  margin-left: -35%;
+}
+nav .container .desktop-nav .drop-down .drop-down-menu-container .drop-down-menu a:hover {
+  color: #802EC0;
+  font-weight: 500;
+}
+nav .container .desktop-nav .drop-down:hover .drop-down-menu-container {
+  display: flex;
+}
+nav .container .desktop-nav button, nav .container .desktop-nav .first-link {
+  position: relative;
+}
+nav .container .desktop-nav button::before, nav .container .desktop-nav .first-link::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: #802EC0;
+  bottom: -7px;
+  right: 0;
+  transition: 0.6s;
+}
+nav .container .desktop-nav button:hover::before, nav .container .desktop-nav .first-link:hover::before {
+  width: 100%;
+  background-color: #802EC0;
+  bottom: -7px;
+  left: 0;
+  transition: 0.6s;
 }
 nav .container .clicked.menu-button span:first-child {
   translate: 0px 7px;
@@ -696,6 +703,7 @@ nav .container .clicked.menu-button span:last-child {
 nav .container .menu-button {
   display: flex;
   flex-direction: column;
+  background-color: transparent;
   gap: 5px;
   cursor: pointer;
 }
@@ -707,6 +715,14 @@ nav .container .menu-button span {
   display: block;
   transition: 0.6s;
 }
+@media (min-width: 1050px) {
+  nav .container .desktop-nav {
+    display: flex;
+  }
+  nav .container .menu-button {
+    display: none;
+  }
+}
 
 nav.clicked {
   transition: 0.8s;
@@ -714,6 +730,7 @@ nav.clicked {
 }
 
 .scrollTop {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   padding: 6px;
@@ -769,7 +786,7 @@ nav.clicked {
   padding: 24px;
   padding-inline: 10px;
 }
-.mobile-nav ul a.active i {
+.mobile-nav ul .down.active i {
   rotate: 180deg;
 }
 .mobile-nav ul .drop-down {
@@ -790,8 +807,9 @@ nav.clicked {
   display: flex;
   transition: 0.6s;
 }
-.mobile-nav ul li > a:first-of-type {
+.mobile-nav ul li > button {
   display: flex;
+  background-color: transparent;
   gap: 2rem;
   justify-content: space-between;
   font-size: 18px;
@@ -801,7 +819,7 @@ nav.clicked {
   margin-left: 0px;
   transition: 0.4s ease;
 }
-.mobile-nav ul li > a:first-of-type i {
+.mobile-nav ul li > button i {
   font-size: 20px;
 }
 .mobile-nav ul li:last-of-type {
@@ -841,8 +859,8 @@ nav.clicked {
   transition: 0.8s;
 }
 
-@media (min-width: 1040px) {
-  .mobile-nav {
+@media (min-width: 1050px) {
+  .mobile-nav, .mobile-nav.active {
     right: -200%;
   }
 }
@@ -1048,6 +1066,7 @@ nav.clicked {
   border: 1px solid #802EC0;
   border-radius: 8px;
   max-width: 700px;
+  margin-inline: auto;
 }
 #invite .container div h3 {
   font-weight: 500;
@@ -1057,9 +1076,6 @@ nav.clicked {
 #invite .container div a {
   align-self: center;
   padding: 8px 32px;
-}
-#invite .container div p {
-  color: #877B7B;
 }
 
 #social-container {

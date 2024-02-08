@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import UseScrollTop from '../../common/components/UseScrollTop';
-import Faqs from '../home/components/Faqs';
+import Faqs from './component/Faqs';
 
 
 const data = [
@@ -54,7 +54,7 @@ const ContactLayout = () => {
             <NavLink to="testimonies">Testimonies</NavLink>
             <NavLink to="salvation">Receive Salvation</NavLink>
             <NavLink to="counselling">Counselling</NavLink>
-            <NavLink to="invitation">Invitations</NavLink>
+            <NavLink to="invitations">Invitations</NavLink>
             <NavLink to="questions">Questions</NavLink>
             <NavLink to="partner">Partner</NavLink>
             <NavLink to="others">Others</NavLink>

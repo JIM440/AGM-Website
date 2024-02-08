@@ -32,17 +32,6 @@ const Faqs = ({data}) => {
             </div>
           ))}
         </div>
-
-
-
-
-        <div className="more-questions">
-          <h3>Still have questions?</h3>
-          <p>If you still have questions, feel free to contact us.</p>
-          <a href="contact/questions" className="btn">
-            Contact Us
-          </a>
-        </div>
       </div>
     </section>
   );

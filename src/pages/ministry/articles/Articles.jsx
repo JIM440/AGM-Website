@@ -1,6 +1,6 @@
-import articles from '../../assets/images/header-images/articles.jpeg'
-import Banner from '../../common/Banner'
-import UseScrollTop from '../../common/components/UseScrollTop';
+import Banner from '../../../common/Banner';
+import UseScrollTop from '../../../common/components/UseScrollTop';
+import articles from '../../../assets/images/header-images/articles.jpeg'
 
 const Articles = () => {
   const scrollToTop = UseScrollTop();

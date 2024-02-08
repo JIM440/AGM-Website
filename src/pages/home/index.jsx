@@ -1,29 +1,8 @@
+import { Link } from 'react-router-dom';
 import tower from '../../assets/images/AGM-images/tower.jpeg'
 import Hero from '../../common/Hero';
 import SideNews from '../../common/SideNews';
 import useScrollTop from '../../common/components/UseScrollTop'
-import Faqs from './components/Faqs';
-
-
-const data = [
-  {
-    question: 'who art thou o ye son of man1',
-    answer: 'who art thou o ye son of man1',
-  },
-  {
-    question: 'who art thou o ye son of man2',
-    answer: 'who art thou o ye son of man2',
-  },
-  {
-    question: 'who art thou o ye son of man3',
-    answer: 'who art thou o ye son of man3',
-  },
-  {
-    question: 'who art thou o ye son of man4',
-    answer: 'who art thou o ye son of man4',
-  },
-];
-
 
 
 const Home = () => {
@@ -46,8 +25,8 @@ const Home = () => {
               Welcome to the Apostolic Gospel Mission, where Jesus gives men beauty for ashes. By establishing His kingdom, power and glory in your life, keeping you in the Light and teaching you how to walk in Light. AGM is a church of God and therefore under the leadership of the Holy Spirit. The Holy Spirit through His wisdom has made Prophet Kevin and Rev. Karen Overseers of AGM. For questions, prayer requests, invitations or testimonies feel free to contact us.
             </p>
             <div className="btn-container">
-              <a href="./about/agm" className="btn btn-white">Learn More</a>
-              <a href="./contact/prayerrequests" className="btn">Contact Us</a>
+              <Link to="about/agm" className="btn btn-white">Learn More</Link>
+              <Link to="contact/prayerrequests" className="btn">Contact Us</Link>
             </div>
           </div>
           <div>
@@ -73,10 +52,10 @@ const Home = () => {
             <div className="text">
               <h3>Who did Cain marry?</h3>
               <div>
-                <a href="articles/id">
+                <Link to="ministry/articles/id">
                   <p>Read More</p>
                   <i className="bx bxs-right-arrow-circle"></i>
-                </a>
+                </Link>
                 <span>
                   <i className="bi bi-clock-fill"></i>
                   <span>23-12-2023</span>
@@ -92,10 +71,10 @@ const Home = () => {
             <div className="text">
               <h3>Is football godly or evil?</h3>
               <div>
-                <a href="./home/singlearticle.html">
+                <Link to="ministry/articles/article">
                   <p>Read More</p>
                   <i className="bx bxs-right-arrow-circle"></i>
-                </a>
+                </Link>
                 <span>
                   <i className="bi bi-clock-fill"></i>
                   <span>23-12-2023</span>
@@ -107,30 +86,14 @@ const Home = () => {
         <h3>Visions</h3>
         <div className="content-container">
           <div className="content-box">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStQI5ARs0atJoYRaiwT6yPHbgoPPynNr37-7PyQrmGgXp1RsnUB7las58Ytx1nqiFLXFo&usqp=CAU" alt="" />
-            <div className="text">
-              <h3>Vision of the seven lamp stands.</h3>
-              <div>
-                <a href="./home/singlearticle.html">
-                  <p>Read More</p>
-                  <i className="bx bxs-right-arrow-circle"></i>
-                </a>
-                <span>
-                  <i className="bi bi-clock-fill"></i>
-                  <span>23-12-2023</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="content-box">
             <img src="https://media.istockphoto.com/id/1183916666/vector/red-dragon-head-digital-painting.jpg?s=612x612&w=0&k=20&c=dDu6vxNhL1zkXyXdLh0_AWqoysJPY43idokKFvknOaA=" alt="" />
             <div className="text">
               <h3>Vision of the Dragon.</h3>
               <div>
-                <a href="./home/singlearticle.html">
+                <Link to="ministry/articls/article">
                   <p>Read More</p>
                   <i className="bx bxs-right-arrow-circle"></i>
-                </a>
+                </ Link>
                 <span>
                   <i className="bi bi-clock-fill"></i>
                   <span>23-12-2023</span>
@@ -139,7 +102,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <a href="./home/articles.html" className="link">See more contents</a>
+        <Link to="ministry/articles" className="link">See more contents</Link>
       </div>
     </section>
 
@@ -174,8 +137,8 @@ const Home = () => {
           </div>
         </div>
         <div className="btn-container">
-          <a href="contact/testimonies" className="btn btn-white">Add Your Testimony</a
-          ><a href="testimonies" className="btn">View More</a>
+          <Link to="contact/testimonies" className="btn btn-white">Register Your Testimony</Link
+          ><Link to="ministry/testimonies" className="btn">View More</Link>
         </div>
       </div>
     </section>
@@ -213,14 +176,14 @@ const Home = () => {
                 Help Us Reach More People By Sharing This Video To Others.
               </p>
               <div className="video-btns">
-                <a href="facebook.com/prophetkevinonline" className="btn fb">
+                <Link to="facebook.com/prophetkevinonline" className="btn fb">
                   <i className="bx bxl-facebook"></i>
                   <p>Share On Facebook</p>
-                </a>
-                <a href="youtube.com/prophetkevinonline" className="btn yt">
+                </ Link>
+                <Link to="youtube.com/prophetkevinonline" className="btn yt">
                   <i className="bx bxl-youtube"></i>
                   <p>Subscribe</p>
-                </a>
+                </ Link>
               </div>
             </div>
             <div className="video-card">
@@ -232,14 +195,14 @@ const Home = () => {
                 Help Us Reach More People By Sharing This Video To Others.
               </p>
               <div className="video-btns">
-                <a href="facebook.com/prophetkevinonline" className="btn fb">
+                <Link to="facebook.com/prophetkevinonline" className="btn fb">
                   <i className="bx bxl-facebook"></i>
                   <p>Share On Facebook</p>
-                </a>
-                <a href="youtube.com/prophetkevinonline" className="btn yt">
+                </ Link>
+                <Link to="youtube.com/prophetkevinonline" className="btn yt">
                   <i className="bx bxl-youtube"></i>
                   <p>Subscribe</p>
-                </a>
+                </ Link>
               </div>
             </div>
             <div className="video-card">
@@ -252,14 +215,14 @@ CONTENDING FOR THE FAITH By Prophet Kevin N. </h3>
                 Help Us Reach More People By Sharing This Video To Others.
               </p>
               <div className="video-btns">
-                <a href="facebook.com/prophetkevinonline" className="btn fb">
+                <Link to="facebook.com/prophetkevinonline" className="btn fb">
                   <i className="bx bxl-facebook"></i>
                   <p>Share On Facebook</p>
-                </a>
-                <a href="youtube.com/prophetkevinonline" className="btn yt">
+                </ Link>
+                <Link to="youtube.com/prophetkevinonline" className="btn yt">
                   <i className="bx bxl-youtube"></i>
                   <p>Subscribe</p>
-                </a>
+                </ Link>
               </div>
             </div>
           </div>
@@ -268,8 +231,6 @@ CONTENDING FOR THE FAITH By Prophet Kevin N. </h3>
         </div>
       </div>
     </section>
-
- <Faqs data={data}/>
 
 </>
   );
