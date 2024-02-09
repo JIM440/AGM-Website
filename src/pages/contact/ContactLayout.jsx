@@ -70,9 +70,6 @@ const ContactLayout = () => {
         </div>
       </section>
 
-      {/* <!-- ==== ========= faqs section ========== ==== --> */}
-      <Faqs data={data}/>
-
       {/* <!-- --------- ------- contact info ------- ----------- --> */}
       <section id="contact-info">
         <div className="container">
@@ -123,6 +120,9 @@ const ContactLayout = () => {
           </div>
         </div>
       </section>
+
+      {/* <!-- ==== ========= faqs section ========== ==== --> */}
+      <Faqs data={data}/>
     </>
   );
 };
