@@ -143,26 +143,15 @@ body {
 }
 .content-container .content-box {
   border-radius: 8px;
-  padding-right: 1rem;
   border: 1px solid #802EC0;
   height: fit-content;
   display: flex;
-  gap: 1rem;
+  gap: 4px;
 }
 @media (max-width: 360px) {
   .content-container .content-box {
     gap: 6px;
     min-width: 200px;
-  }
-}
-@media (min-width: 700px) {
-  .content-container .content-box {
-    gap: 1.2rem;
-  }
-}
-@media (min-width: 900px) {
-  .content-container .content-box {
-    gap: 1rem;
   }
 }
 .content-container .content-box img {
@@ -178,10 +167,10 @@ body {
   }
 }
 .content-container .content-box .text {
-  padding: 10px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   justify-content: space-between;
   font-size: 14px;
 }
@@ -656,7 +645,7 @@ nav .container .desktop-nav .drop-down .drop-down-menu-container .drop-down-menu
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 200px;
+  min-width: 200px;
   margin-left: -35%;
 }
 nav .container .desktop-nav .drop-down .drop-down-menu-container .drop-down-menu a:hover {
@@ -1134,7 +1123,7 @@ nav.clicked {
   width: 100%;
   max-width: none;
   height: auto;
-  background-color: #802EC0;
+  background-color: #877B7B;
   min-height: 200px;
 }
 #hero .hero-home-image img.desktop {

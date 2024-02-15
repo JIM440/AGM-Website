@@ -34,8 +34,6 @@ import Article from './pages/ministry/articles/Article';
 
 import NotFound from './pages/notfound/NotFound';
 
-import Fetch from './Fetch';
-
 // +++++++++++ layout +++++++++++
 
 import RootLayout from './common/Layout/RootLayout';
@@ -58,11 +56,11 @@ const router = createBrowserRouter(
 
       {/* ministry */}
       <Route path="ministry">
-      <Route index element={<Ministry />} /> 
+        <Route index element={<Ministry />} />
         <Route path="salvation" element={<Salvation />} />
         <Route path="testimonies" element={<Testimonies />} />
         <Route path="articles" element={<Articles />}>
-        <Route path=":id" element={<Article />} />
+          <Route path=":id" element={<Article />} />
         </Route>
       </Route>
 
@@ -70,7 +68,7 @@ const router = createBrowserRouter(
       <Route path="partner" element={<PartnerLayout />}>
         <Route index element={<Partners />} />
         <Route path="projects" element={<Project />} />
-        <Route path="donate" element={<Donate />} /> 
+        <Route path="donate" element={<Donate />} />
       </Route>
 
       {/* contact */}
@@ -84,8 +82,6 @@ const router = createBrowserRouter(
         <Route path="salvation" element={<ReceiveSalvation />} />
         <Route path="counselling" element={<Counselling />} />
       </Route>
-
-      <Route path="fetch" element={<Fetch />} />
 
       {/* not found */}
       <Route path="*" element={<NotFound />} />
