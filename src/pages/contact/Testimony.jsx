@@ -17,7 +17,11 @@ const Testimony = () => {
         <span> * </span> marks a required field.
       </p>
 
-      <form action="https://formspree.io/f/xwkglrnl" method="POST">
+      <form
+        action="https://formspree.io/f/xwkglrnl"
+        method="POST"
+        encType="multipart/form-data"
+      >
         <div className="form-element">
           <label for="name">Name:</label>
           <input type="text" name="name" required placeholder="Your Name" />
@@ -51,10 +55,10 @@ const Testimony = () => {
           />
         </div>
         <div className="form-element">
-          <label for="location">Location:</label>
+          <label for="location">Images</label>
           <input
             type="file"
-            name="picture"
+            name="files[]"
             required
             placeholder="Your location"
           />
