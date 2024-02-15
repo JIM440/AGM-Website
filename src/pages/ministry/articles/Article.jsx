@@ -9,8 +9,6 @@ const Article = () => {
   const [data, setData] = useState(null);
   const scrollToTop = UseScrollTop();
 
-  console.log(id);
-
   useEffect(() => {
     FetchArticles()
       .then((data) => {
@@ -22,19 +20,16 @@ const Article = () => {
           articles.prophetic_revelations || {}
         );
 
-        const articleData =
-          visions.find((vision) => vision.id === id) ||
-          questions.find((question) => question.id === id) ||
-          counsels.find((counsel) => counsel.id === id) ||
-          prophetic_revelations.find(
-            (prophetic_revelation) => prophetic_revelation.id === id
-          );
+        console.log(visions);
+        console.log(id);
+        const articleData = visions.find((vision) => vision.id === id);
+        console.log(articleData);
         setData(articleData);
       })
       .catch((error) => {
         console.error('Error fetching article data:', error);
       });
-  });
+  }, [id]);
 
   return (
     <>
@@ -42,20 +37,26 @@ const Article = () => {
       <Banner text="" className="single-article" title="" style={{}} />
 
       {/* <!-- article content --> */}
-      <section className="article-content-container mw-content">
-        <div className="container">
-          <div className="category-header">
-            <h2 className="category-title">{data.title}</h2>
-            <span>
-              <i className="bi bi-clock-fill"></i>
-              <span className="date"> 23-01-2023</span>
-            </span>
+      {data ? (
+        <section className="article-content-container mw-content">
+          <div className="container">
+            <div className="category-header">
+              <h2 className="category-title">{data.title}</h2>
+              <span>
+                <i className="bi bi-clock-fill"></i>
+                <span className="date"> 23-01-2023</span>
+              </span>
+            </div>
+            <div className="category-content">
+              <p>
+                {data.content.replace(/<br>/g, '<br />').replace(/\//g, '"')}
+              </p>
+            </div>
           </div>
-          <div className="category-content">
-            <p>{data.content.replace(/<br>/g, '<br />').replace(/\//g, '"')}</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <p className="container">Loading data.....</p>
+      )}
 
       {/* <!-- related articles --> */}
       <section id="related-content">
