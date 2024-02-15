@@ -70,6 +70,8 @@ const Home = () => {
           <Content data={data.questions} />
           <h3>Visions</h3>
           <Content data={data.visions} />
+          <h3>Counsels</h3>
+          <Content data={data.counsels} />
           <Link to="ministry/articles" className="link">
             See more contents
           </Link>
