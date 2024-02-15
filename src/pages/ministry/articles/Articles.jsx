@@ -27,7 +27,7 @@ const Articles = () => {
           <h3>Visions</h3>
           <Content data={data.visions} />
           <h3>Counsels</h3>
-          <Content data={data.visions} />
+          <Content data={data.counsels} />
           <h3>Prophetic Revelations</h3>
           <Content data={data.prophetic_revelations} />
         </div>
