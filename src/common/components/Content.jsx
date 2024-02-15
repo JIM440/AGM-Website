@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ContentSkeleton from './skeleton/ContentSkeleton';
 
 const Content = ({ data }) => {
   return (
@@ -24,7 +25,7 @@ const Content = ({ data }) => {
           </div>
         ))
       ) : (
-        <p className="container">Data is Loading ......</p>
+        <ContentSkeleton />
       )}
     </div>
   );
