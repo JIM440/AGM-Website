@@ -59,9 +59,8 @@ const router = createBrowserRouter(
         <Route index element={<Ministry />} />
         <Route path="salvation" element={<Salvation />} />
         <Route path="testimonies" element={<Testimonies />} />
-        <Route path="articles" element={<Articles />}>
-          <Route path=":id" element={<Article />} />
-        </Route>
+        <Route path="articles" element={<Articles />} />
+        <Route path="articles/:id" element={<Article />} />
       </Route>
 
       {/* partner */}

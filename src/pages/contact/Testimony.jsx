@@ -55,13 +55,15 @@ const Testimony = () => {
           />
         </div>
         <div className="form-element">
-          <label for="location">Images</label>
+          <label for="images">Images</label>
           <input
             type="file"
-            name="files[]"
+            id="images"
+            name="files"
             accept="image/*"
             required
             placeholder="Your location"
+            multiple
           />
         </div>
 

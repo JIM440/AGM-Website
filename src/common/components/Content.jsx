@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import ContentSkeleton from './skeleton/ContentSkeleton';
 
@@ -12,7 +11,7 @@ const Content = ({ data }) => {
             <div className="text">
               <h3>{article.headerText}</h3>
               <div>
-                <Link to="">
+                <Link to={`articles/${article.id}`}>
                   <p>Read More</p>
                   <i className="bx bxs-right-arrow-circle"></i>
                 </Link>

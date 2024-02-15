@@ -3,38 +3,34 @@ import { NavLink, Outlet } from 'react-router-dom';
 import UseScrollTop from '../../common/components/UseScrollTop';
 import Faqs from './component/Faqs';
 
-
 const data = [
   {
-    "question": "question 1 tag here",
-    "answer": "answer 1 answer here"
+    question: 'question 1 tag here',
+    answer: 'answer 1 answer here',
   },
   {
-    "question": "question 2 tag here",
-    "answer": "answer 2 answer here"
+    question: 'question 2 tag here',
+    answer: 'answer 2 answer here',
   },
   {
-    "question": "question 3 tag here",
-    "answer": "answer 3 answer here"
+    question: 'question 3 tag here',
+    answer: 'answer 3 answer here',
   },
   {
-    "question": "question 4 tag here",
-    "answer": "answer 4 answer here"
+    question: 'question 4 tag here',
+    answer: 'answer 4 answer here',
   },
   {
-    "question": "question 5 tag here",
-    "answer": "answer 5 answer here"
-  }
-]
-
-
+    question: 'question 5 tag here',
+    answer: 'answer 5 answer here',
+  },
+];
 
 const ContactLayout = () => {
-  const scrollToTop = UseScrollTop()
+  const scrollToTop = UseScrollTop();
   return (
     <>
       <section id="contact-form" className="prayer-requests">
-
         <div className="container">
           <p>
             For prayer requests, receive salvation, testimonies, counseling,
@@ -65,8 +61,6 @@ const ContactLayout = () => {
           <Outlet />
 
           {/* Outlet End Here */}
-
-
         </div>
       </section>
 
@@ -110,7 +104,8 @@ const ContactLayout = () => {
               </div>
             </div>
             <div className="even-column-img">
-              <iframe title='Google Map'
+              <iframe
+                title="Google Map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3976.789603432982!2d9.447079775918569!3d4.631590419569697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1060c72e550a4ff3%3A0x9191e4ac70783393!2sProphet%20Kevin%20Church!5e0!3m2!1sen!2scm!4v1704224829128!5m2!1sen!2scm"
                 allowfullscreen=""
                 loading="lazy"
@@ -122,7 +117,7 @@ const ContactLayout = () => {
       </section>
 
       {/* <!-- ==== ========= faqs section ========== ==== --> */}
-      <Faqs data={data}/>
+      <Faqs data={data} />
     </>
   );
 };
