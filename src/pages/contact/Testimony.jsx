@@ -59,6 +59,7 @@ const Testimony = () => {
           <input
             type="file"
             name="files[]"
+            accept="image/*"
             required
             placeholder="Your location"
           />
