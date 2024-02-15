@@ -94,71 +94,60 @@
   }
 }
 
-.skeleton {
-  display: grid;
-  padding: 24px 0px;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+.skeleton-content-box {
+  border-radius: 8px;
+  border: 1px solid lighten($text-muted, 40%);
+  height: 102px;
+  display: flex;
+  gap: 4px;
 
-  @include breakpointDynamic(900px) {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 360px) {
+    gap: 6px;
+    min-width: 200px;
   }
 
-  .content-box {
-    border-radius: 8px;
-    border: 1px solid lighten($text-muted, 40%);
-    height: 102px;
+  .img {
+    width: 100px;
+    min-width: 90px;
+    height: 100px;
+    border-radius: 8px 0px 0px 8px;
+    object-fit: cover;
+    background-color: lighten($text-muted, 40%);
+
+    @media (max-width: 315px) {
+      display: none;
+    }
+  }
+
+  .text {
+    padding: 6px;
     display: flex;
-    gap: 4px;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 100%;
 
-    @media (max-width: 360px) {
-      gap: 6px;
-      min-width: 200px;
-    }
-
-    .img {
-      width: 100px;
-      min-width: 90px;
-      height: 100px;
-      border-radius: 8px 0px 0px 8px;
-      object-fit: cover;
-      background-color: lighten($text-muted, 40%);
-
-      @media (max-width: 315px) {
-        display: none;
-      }
-    }
-
-    .text {
-      padding: 6px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      justify-content: space-between;
-      font-size: 14px;
+    span {
+      border-radius: 16px;
+      display: inline-block;
+      height: 8px;
       width: 100%;
+      background-color: lighten($text-muted, 40%);
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
 
       span {
-        border-radius: 16px;
-        display: inline-block;
-        height: 8px;
-        width: 100%;
-        background-color: lighten($text-muted, 40%);
-      }
-
-      div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-
-        span {
-          width: 100px;
-          height: 7px;
-          @media (max-width: 380px) {
-            gap: 6px;
-            font-size: 10px;
-          }
+        width: 100px;
+        height: 7px;
+        @media (max-width: 380px) {
+          gap: 6px;
+          font-size: 10px;
         }
       }
     }

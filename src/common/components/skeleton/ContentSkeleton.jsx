@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContentSkeleton = () => {
   return (
-    <div className="skeleton">
-      <div className="content-box">
+    <>
+      <div className="skeleton-content-box">
         <span className="img"></span>
         <div className="text">
           <span></span>
@@ -13,7 +13,7 @@ const ContentSkeleton = () => {
           </div>
         </div>
       </div>
-      <div className="content-box">
+      <div className="skeleton-content-box">
         <span className="img"></span>
         <div className="text">
           <span></span>
@@ -23,7 +23,7 @@ const ContentSkeleton = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

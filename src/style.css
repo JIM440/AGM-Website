@@ -201,18 +201,7 @@ body {
   padding: 2px;
 }
 
-.skeleton {
-  display: grid;
-  padding: 24px 0px;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-@media (min-width: 900px) {
-  .skeleton {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.skeleton .content-box {
+.skeleton-content-box {
   border-radius: 8px;
   border: 1px solid #e8e6e6;
   height: 102px;
@@ -220,12 +209,12 @@ body {
   gap: 4px;
 }
 @media (max-width: 360px) {
-  .skeleton .content-box {
+  .skeleton-content-box {
     gap: 6px;
     min-width: 200px;
   }
 }
-.skeleton .content-box .img {
+.skeleton-content-box .img {
   width: 100px;
   min-width: 90px;
   height: 100px;
@@ -234,11 +223,11 @@ body {
   background-color: #e8e6e6;
 }
 @media (max-width: 315px) {
-  .skeleton .content-box .img {
+  .skeleton-content-box .img {
     display: none;
   }
 }
-.skeleton .content-box .text {
+.skeleton-content-box .text {
   padding: 6px;
   display: flex;
   flex-direction: column;
@@ -247,25 +236,25 @@ body {
   font-size: 14px;
   width: 100%;
 }
-.skeleton .content-box .text span {
+.skeleton-content-box .text span {
   border-radius: 16px;
   display: inline-block;
   height: 8px;
   width: 100%;
   background-color: #e8e6e6;
 }
-.skeleton .content-box .text div {
+.skeleton-content-box .text div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
-.skeleton .content-box .text div span {
+.skeleton-content-box .text div span {
   width: 100px;
   height: 7px;
 }
 @media (max-width: 380px) {
-  .skeleton .content-box .text div span {
+  .skeleton-content-box .text div span {
     gap: 6px;
     font-size: 10px;
   }
