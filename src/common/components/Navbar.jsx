@@ -205,12 +205,12 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <buton
+      <button
         onClick={top}
         className={`scrollTop ${topVisible ? 'active' : ''}`}
       >
         <i className="bx bx-up-arrow-alt"></i>
-      </buton>
+      </button>
 
       {/* <!-- mobile nav --> */}
       <div className={`mobile-nav ${open ? 'active' : ''}`}>
