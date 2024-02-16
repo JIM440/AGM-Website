@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import UseScrollTop from '../../../common/components/UseScrollTop';
 import { useParams } from 'react-router-dom';
 import FetchArticles from '../../../common/Data/FetchArticles';
+import NotFound from '../../notfound/NotFound';
 import DOMPurify from 'dompurify';
 
 const Article = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
+  const [idExists, setIdExists] = useState(true);
   const scrollToTop = UseScrollTop();
 
   useEffect(() => {
@@ -27,12 +29,24 @@ const Article = () => {
           prophetic_revelations.find(
             (prophetic_revelation) => prophetic_revelation.id === parseInt(id)
           );
-        setData(articleData);
+        if (articleData) {
+          setData(articleData);
+        } else {
+          setIdExists(false);
+        }
       })
       .catch((error) => {
         console.error('Error fetching article data:', error);
       });
   }, [id]);
+
+  if (!idExists) {
+    return <NotFound />;
+  }
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
