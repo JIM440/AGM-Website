@@ -55,3 +55,30 @@
     }
   }
 }
+
+.hero-bg.single-article {
+  min-height: 400px;
+  max-height: 820px;
+  height: 65vh;
+
+  @include breakpointDynamic(800px) {
+    & {
+      height: 70vh;
+    }
+  }
+  @include breakpointDynamic(850px) {
+    & {
+      height: 80vh;
+    }
+  }
+  @include breakpointDynamic(900px) {
+    & {
+      height: 90vh;
+    }
+  }
+  @include breakpointDynamic(1000px) {
+    & {
+      height: 100vh;
+    }
+  }
+}

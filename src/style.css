@@ -598,6 +598,32 @@ body {
   }
 }
 
+.hero-bg.single-article {
+  min-height: 400px;
+  max-height: 820px;
+  height: 65vh;
+}
+@media (min-width: 800px) {
+  .hero-bg.single-article {
+    height: 70vh;
+  }
+}
+@media (min-width: 850px) {
+  .hero-bg.single-article {
+    height: 80vh;
+  }
+}
+@media (min-width: 900px) {
+  .hero-bg.single-article {
+    height: 90vh;
+  }
+}
+@media (min-width: 1000px) {
+  .hero-bg.single-article {
+    height: 100vh;
+  }
+}
+
 nav {
   position: fixed;
   top: 0;

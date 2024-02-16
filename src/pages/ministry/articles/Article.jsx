@@ -52,10 +52,9 @@ const Article = () => {
     <>
       {/* <!-- hero section --> */}
       <section
-        className="hero-bg"
+        className="hero-bg single-article"
         style={{
           backgroundImage: `url(${data ? data.picture : ''})`,
-          height: '70vh',
         }}
       ></section>
 
@@ -83,7 +82,9 @@ const Article = () => {
           </div>
         </section>
       ) : (
-        <p className="container">Loading data.....</p>
+        <section className="article-content-container mw-content">
+          <div className="container">Content Loading...</div>
+        </section>
       )}
 
       {/* <!-- related articles --> */}
