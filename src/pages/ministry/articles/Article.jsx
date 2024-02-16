@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Banner from '../../../common/Banner';
 import UseScrollTop from '../../../common/components/UseScrollTop';
 import { useParams } from 'react-router-dom';
 import FetchArticles from '../../../common/Data/FetchArticles';
+import DOMPurify from 'dompurify';
 
 const Article = () => {
   const { id } = useParams();
@@ -20,10 +20,13 @@ const Article = () => {
           articles.prophetic_revelations || {}
         );
 
-        console.log(visions);
-        console.log(id);
-        const articleData = visions.find((vision) => vision.id === id);
-        console.log(articleData);
+        const articleData =
+          visions.find((vision) => vision.id === parseInt(id)) ||
+          questions.find((question) => question.id === parseInt(id)) ||
+          counsels.find((counsel) => counsel.id === parseInt(id)) ||
+          prophetic_revelations.find(
+            (prophetic_revelation) => prophetic_revelation.id === parseInt(id)
+          );
         setData(articleData);
       })
       .catch((error) => {
@@ -34,7 +37,13 @@ const Article = () => {
   return (
     <>
       {/* <!-- hero section --> */}
-      <Banner text="" className="single-article" title="" style={{}} />
+      <section
+        className="hero-bg"
+        style={{
+          backgroundImage: `url(${data ? data.picture : ''})`,
+          height: '100vh',
+        }}
+      ></section>
 
       {/* <!-- article content --> */}
       {data ? (
@@ -47,11 +56,16 @@ const Article = () => {
                 <span className="date"> 23-01-2023</span>
               </span>
             </div>
-            <div className="category-content">
-              <p>
-                {data.content.replace(/<br>/g, '<br />').replace(/\//g, '"')}
-              </p>
-            </div>
+            <div
+              className="category-content"
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(
+                  `<p>${data.content
+                    .replace(/\//g, '"')
+                    .replace(/<br>/g, '<br />')}</p>`
+                ),
+              }}
+            ></div>
           </div>
         </section>
       ) : (

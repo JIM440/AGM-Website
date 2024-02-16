@@ -1,8 +1,6 @@
 #hero {
   margin-top: 4.6rem;
 
-
-
   .hero-home-image {
     img {
       width: 100%;
@@ -28,22 +26,21 @@
   }
 }
 
-@include breakpointDynamic(400px){
-  #hero{
+@include breakpointDynamic(400px) {
+  #hero {
     margin-top: 5rem;
   }
 }
 
-@include breakpointDynamic(560px){
-  #hero{
+@include breakpointDynamic(560px) {
+  #hero {
     margin-top: 6rem;
   }
 }
 
-
 #featured-content {
   .container {
-    .link{
+    .link {
       display: inline-block;
       font-weight: 600;
       margin-top: 1.2rem;
@@ -81,70 +78,60 @@
 // ========== =========    ========= =========
 // ========== =========    ========= =========
 
-
-
 // testimonies page styles
-.testimonies.hero-bg{
-    background-image: url(https://www.nairaland.com/attachments/8329837_fbimg15449535261118082_jpeg70c8c4b83d081570da8db6664802c8b8);
-  }
-
-
-
-  // salvation page styles
-.salvation.hero-bg{
-    background-image: url(https://media.istockphoto.com/id/657091114/photo/crucifixion-of-jesus-christ.jpg?s=612x612&w=0&k=20&c=GrvlF-IaMzbTJoRxMfz-g8PVjlbdi7l56FmG6uOi0q0=);
-  }
-
-#salvation{
-.container-salvation{
-  h2{
-    margin-bottom: 20px;
-  }
-  p{
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .singlearticle.hero-bg{
-    background-image: url(https://godshotspot.files.wordpress.com/2014/06/e4284-jesus-walking-among-7-candlesticks11.jpg?w=522&h=393);
-  }
-}
+.testimonies.hero-bg {
+  background-image: url(https://www.nairaland.com/attachments/8329837_fbimg15449535261118082_jpeg70c8c4b83d081570da8db6664802c8b8);
 }
 
+// salvation page styles
+.salvation.hero-bg {
+  background-image: url(https://media.istockphoto.com/id/657091114/photo/crucifixion-of-jesus-christ.jpg?s=612x612&w=0&k=20&c=GrvlF-IaMzbTJoRxMfz-g8PVjlbdi7l56FmG6uOi0q0=);
+}
 
+#salvation {
+  .container-salvation {
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
 
 // article page styles
-.article-content-container{
+.article-content-container {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
 
-.container{
-  display: flex;
-flex-direction: column;
-gap: 1.4rem;
+    .category-header {
+      & > span {
+        color: $text-muted;
 
-.category-header{
-  &>span{
-    color: $text-muted;
+        & > * {
+          font-size: 14px;
+        }
 
-    &>*{
-      font-size: 14px;
-    }
-
-    i{
-      margin-right: 10px;
+        i {
+          margin-right: 10px;
+        }
+      }
     }
   }
 }
-}
-}
 
-.category-content p{
+.category-content p {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.single-article.hero-bg{
+.single-article.hero-bg {
   background-image: url(https://www.sevenchurchesofapocalypse.com/assets/images/jesus-seven-lampstansd-600x449.jpg);
 }
 
-.articles.hero-bg{
+.articles.hero-bg {
   background-image: url(./assets/images/header-images/articles.jpeg);
 }

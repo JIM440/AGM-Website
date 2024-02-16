@@ -11,7 +11,7 @@ const Content = ({ data }) => {
             <div className="text">
               <h3>{article.headerText}</h3>
               <div>
-                <Link to={`ministry/articles/${article.id}`}>
+                <Link to={`/ministry/articles/${article.id}`}>
                   <p>Read More</p>
                   <i className="bx bxs-right-arrow-circle"></i>
                 </Link>

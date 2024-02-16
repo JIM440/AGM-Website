@@ -15,6 +15,7 @@ body {
   background-color: white;
   margin-inline: auto;
   position: relative;
+  max-width: 1440px;
 }
 
 img {
@@ -22,7 +23,8 @@ img {
   vertical-align: middle;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -40,7 +42,8 @@ section {
   margin-bottom: 1.4rem;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: white;
 }
 
@@ -496,6 +499,13 @@ body {
 }
 #faqs-section .container-faqs-section .more-questions h3 {
   font-size: 1.6rem;
+}
+
+.article-content-container h2 {
+  font-size: 24px;
+}
+.article-content-container .category-content p {
+  font-size: 24px;
 }
 
 .container {
@@ -1248,9 +1258,6 @@ nav.clicked {
 #salvation .container-salvation p {
   font-size: 18px;
   font-weight: 500;
-}
-#salvation .container-salvation .singlearticle.hero-bg {
-  background-image: url(https://godshotspot.files.wordpress.com/2014/06/e4284-jesus-walking-among-7-candlesticks11.jpg?w=522&h=393);
 }
 
 .article-content-container .container {
