@@ -55,7 +55,7 @@ const Article = () => {
         className="hero-bg"
         style={{
           backgroundImage: `url(${data ? data.picture : ''})`,
-          height: '100vh',
+          height: '70vh',
         }}
       ></section>
 
